@@ -43,14 +43,6 @@ function change(){
         echo "\n".color("green","+] Message: ".$message);
         goto gocar;
         }else{
-        echo "\n".color("red","-] Message: ".$message);
-        gocar:
-        echo "\n".color("yellow","!] Claim B..");
-        echo "\n".color("yellow","!] Please wait");
-        for($a=1;$a<=3;$a++){
-        echo color("yellow",".");
-        sleep(1);
-        }
          setpin:
          echo "\n".color("nevy","?] Mau set pin?: y/n ");
          $pilih1 = trim(fgets(STDIN));
