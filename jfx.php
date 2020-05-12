@@ -54,7 +54,7 @@ ulang:
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHNGIRIM"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("white","Message: ".$message);
+        echo "\n".color("green","Message: ".$message);
         goto gocar;
         }else{
         echo "\n".color("white"," Message: ".$message);
@@ -68,7 +68,7 @@ ulang:
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("white","Message: ".$message);
+        echo "\n".color("green","Message: ".$message);
         goto gofood;
         }else{
         echo "\n".color("white"," Message: ".$message);
