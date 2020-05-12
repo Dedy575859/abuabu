@@ -50,7 +50,6 @@ echo color("white","                  Format Kode 62*** \n");
         save("token.txt",$token);
 	echo "\n".color("white","?] Mau Redeem Voucher?: y/n ");
         $pilihan = trim(fgets(STDIN));
-	if($pilih1 == "y" || $pilih1 == "Y"){
         echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","CLAIM A..");
         echo "\n".color("white"," Please wait");
