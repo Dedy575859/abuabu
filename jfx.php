@@ -71,7 +71,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo color("white",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"X"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AXEANTIMATIGAYA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","Message: ".$message);
@@ -85,7 +85,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo color("white",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHBELANJA"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
         echo "\n".color("white"," REFRESH..");
