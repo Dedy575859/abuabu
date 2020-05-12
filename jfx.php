@@ -82,7 +82,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," CLAIM C..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
-        echo color("white",".");
+        echo color("green",".");
         sleep(3);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
@@ -91,7 +91,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," REFRESH..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
-        echo color("white",".");
+        echo color("green",".");
         sleep(3);
         }
         sleep(1);
