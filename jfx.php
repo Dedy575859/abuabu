@@ -51,7 +51,6 @@ echo color("white","                  Format Kode 62*** \n");
 	echo "\n".color("white","?] Mau Redeem Voucher?: y/n ");
         $pilihan = trim(fgets(STDIN));
 	if($pilih1 == "y" || $pilih1 == "Y"){
-         //if($pilih1 == "y" && strpos($no, "628"))
         echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","CLAIM A..");
         echo "\n".color("white"," Please wait");
