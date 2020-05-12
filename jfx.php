@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","           SCRIPT RECODE ABUABU GRATIS TIDAK DI JUAL \n");
+echo color("red","      SCRIPT RECODE ABUABU GRATIS TIDAK DI JUAL \n");
 echo color("white","         Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("white","                    Never Extinct         \n");
 echo color("white","                  Format Kode 62*** \n");
