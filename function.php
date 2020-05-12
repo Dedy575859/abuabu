@@ -1,15 +1,18 @@
 <?php
+
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
+
 $header[] = "Host: api.gojekapi.com";
 $header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.46.1";
+$header[] = "X-AppVersion: 3.52.2";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: -6.220".mt_rand(100,999).",106.77".mt_rand(1000,9999);
+$header[] = "X-Location: -7.254794,112.754504";
+$header[] = "X-Location-Accuracy: 3.0";
 if ($pin):
 $header[] = "pin: $pin";
     endif;
@@ -53,7 +56,7 @@ function save($filename, $content)
 function nama()
     {
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://ninjaname.horseridersupply.com/indonesian_name.php");
+    curl_setopt($ch, CURLOPT_URL, "http://ninjaname.horseridersupply.com/african_name.php");
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -71,7 +74,6 @@ function getStr1($a,$b,$c,$d){
         $a = @explode($a,$c)[$d];
         return @explode($b,$a)[0];
 }
-
 function color($color = "default" , $text)
     {
         $arrayColor = array(
