@@ -47,7 +47,7 @@ echo color("white","                  Format Kode 62*** \n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
-        save("token.txt",$token);
+        save("token.txt",$token); 
         echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","CLAIM A..");
         echo "\n".color("white"," Please wait");
