@@ -67,7 +67,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(30);
+        sleep(20);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -81,9 +81,9 @@ echo color("white","                  Format Kode 62*** \n");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(5);
+        sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANB"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"x"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
         echo "\n".color("white"," REFRESH..");
